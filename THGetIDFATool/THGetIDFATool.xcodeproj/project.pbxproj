@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		020B4A1E3414FEDFB488067F /* libPods-THGetIDFATool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A1903BD40629D9D3FED5AA /* libPods-THGetIDFATool.a */; };
+		6416E5BF233B6599005D873A /* light_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5BE233B6599005D873A /* light_nav.png */; };
+		6416E5C1233B65C3005D873A /* back_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5C0233B65C2005D873A /* back_nav.png */; };
+		6416E5C5233B70B2005D873A /* THIDFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C3233B70B2005D873A /* THIDFAViewController.m */; };
+		6416E5CA233B720C005D873A /* THSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C8233B720C005D873A /* THSettingViewController.m */; };
+		6416E5CB233B720C005D873A /* THSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5C9233B720C005D873A /* THSettingViewController.xib */; };
 		6487200C2331D42800F0F751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200B2331D42800F0F751 /* AppDelegate.m */; };
 		6487200F2331D42800F0F751 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200E2331D42800F0F751 /* ViewController.m */; };
 		648720122331D42800F0F751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648720102331D42800F0F751 /* Main.storyboard */; };
@@ -27,10 +32,24 @@
 		648757632332412000F0F751 /* setting-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 648757602332412000F0F751 /* setting-3.png */; };
 		648757642332412000F0F751 /* setting-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 648757612332412000F0F751 /* setting-1.png */; };
 		648757652332412000F0F751 /* setting-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 648757622332412000F0F751 /* setting-2.png */; };
-		64875769233257B300F0F751 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 64875768233257B200F0F751 /* Icon-80.png */; };
+		64BE6E09233B513500E91C79 /* THCodeScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BE6E08233B513500E91C79 /* THCodeScanView.m */; };
+		64BE6E0E233B544600E91C79 /* PDCameraScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BE6E0A233B544600E91C79 /* PDCameraScanViewController.m */; };
+		64BE6E0F233B544600E91C79 /* PDCameraScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BE6E0C233B544600E91C79 /* PDCameraScanView.m */; };
+		64BE6E11233B564800E91C79 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 64BE6E10233B564800E91C79 /* Icon-80.png */; };
+		64BE6E13233B5B6800E91C79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BE6E12233B5B6800E91C79 /* UIKit.framework */; };
+		64BE6E15233B5B6E00E91C79 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BE6E14233B5B6E00E91C79 /* AVFoundation.framework */; };
+		64BE6E18233B5C1D00E91C79 /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 64BE6E17233B5C1D00E91C79 /* ScanResultViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6416E5B9233B61F3005D873A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		6416E5BE233B6599005D873A /* light_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = light_nav.png; sourceTree = "<group>"; };
+		6416E5C0233B65C2005D873A /* back_nav.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_nav.png; sourceTree = "<group>"; };
+		6416E5C2233B70B2005D873A /* THIDFAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THIDFAViewController.h; sourceTree = "<group>"; };
+		6416E5C3233B70B2005D873A /* THIDFAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THIDFAViewController.m; sourceTree = "<group>"; };
+		6416E5C7233B720C005D873A /* THSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THSettingViewController.h; sourceTree = "<group>"; };
+		6416E5C8233B720C005D873A /* THSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THSettingViewController.m; sourceTree = "<group>"; };
+		6416E5C9233B720C005D873A /* THSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THSettingViewController.xib; sourceTree = "<group>"; };
 		648720072331D42800F0F751 /* THGetIDFATool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THGetIDFATool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6487200A2331D42800F0F751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6487200B2331D42800F0F751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +79,17 @@
 		648757602332412000F0F751 /* setting-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-3.png"; sourceTree = "<group>"; };
 		648757612332412000F0F751 /* setting-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-1.png"; sourceTree = "<group>"; };
 		648757622332412000F0F751 /* setting-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-2.png"; sourceTree = "<group>"; };
-		64875768233257B200F0F751 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-80.png"; path = "../../图标/Icon-80.png"; sourceTree = "<group>"; };
+		64BE6E07233B513500E91C79 /* THCodeScanView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THCodeScanView.h; sourceTree = "<group>"; };
+		64BE6E08233B513500E91C79 /* THCodeScanView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THCodeScanView.m; sourceTree = "<group>"; };
+		64BE6E0A233B544600E91C79 /* PDCameraScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCameraScanViewController.m; sourceTree = "<group>"; };
+		64BE6E0B233B544600E91C79 /* PDCameraScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCameraScanView.h; sourceTree = "<group>"; };
+		64BE6E0C233B544600E91C79 /* PDCameraScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDCameraScanView.m; sourceTree = "<group>"; };
+		64BE6E0D233B544600E91C79 /* PDCameraScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDCameraScanViewController.h; sourceTree = "<group>"; };
+		64BE6E10233B564800E91C79 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		64BE6E12233B5B6800E91C79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64BE6E14233B5B6E00E91C79 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		64BE6E16233B5C1D00E91C79 /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		64BE6E17233B5C1D00E91C79 /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		A53ACB772B21C56608D1CFED /* Pods-THGetIDFATool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THGetIDFATool.release.xcconfig"; path = "Target Support Files/Pods-THGetIDFATool/Pods-THGetIDFATool.release.xcconfig"; sourceTree = "<group>"; };
 		E4A1903BD40629D9D3FED5AA /* libPods-THGetIDFATool.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-THGetIDFATool.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F614DF512202D60274F76D71 /* Pods-THGetIDFATool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THGetIDFATool.debug.xcconfig"; path = "Target Support Files/Pods-THGetIDFATool/Pods-THGetIDFATool.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BE6E15233B5B6E00E91C79 /* AVFoundation.framework in Frameworks */,
+				64BE6E13233B5B6800E91C79 /* UIKit.framework in Frameworks */,
 				020B4A1E3414FEDFB488067F /* libPods-THGetIDFATool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +143,20 @@
 				648720202331D48100F0F751 /* UIResponder+Router.m */,
 				6487574E2332190200F0F751 /* UIViewController+HUD.h */,
 				6487574F2332190200F0F751 /* UIViewController+HUD.m */,
+				6416E5B9233B61F3005D873A /* PrefixHeader.pch */,
+				64BE6E07233B513500E91C79 /* THCodeScanView.h */,
+				64BE6E08233B513500E91C79 /* THCodeScanView.m */,
+				64BE6E0B233B544600E91C79 /* PDCameraScanView.h */,
+				64BE6E0C233B544600E91C79 /* PDCameraScanView.m */,
+				64BE6E0D233B544600E91C79 /* PDCameraScanViewController.h */,
+				64BE6E0A233B544600E91C79 /* PDCameraScanViewController.m */,
+				64BE6E16233B5C1D00E91C79 /* ScanResultViewController.h */,
+				64BE6E17233B5C1D00E91C79 /* ScanResultViewController.m */,
+				6416E5C2233B70B2005D873A /* THIDFAViewController.h */,
+				6416E5C3233B70B2005D873A /* THIDFAViewController.m */,
+				6416E5C7233B720C005D873A /* THSettingViewController.h */,
+				6416E5C8233B720C005D873A /* THSettingViewController.m */,
+				6416E5C9233B720C005D873A /* THSettingViewController.xib */,
 				6487200A2331D42800F0F751 /* AppDelegate.h */,
 				6487200B2331D42800F0F751 /* AppDelegate.m */,
 				6487200D2331D42800F0F751 /* ViewController.h */,
@@ -133,7 +178,9 @@
 				648757612332412000F0F751 /* setting-1.png */,
 				648757622332412000F0F751 /* setting-2.png */,
 				648757602332412000F0F751 /* setting-3.png */,
-				64875768233257B200F0F751 /* Icon-80.png */,
+				6416E5BE233B6599005D873A /* light_nav.png */,
+				6416E5C0233B65C2005D873A /* back_nav.png */,
+				64BE6E10233B564800E91C79 /* Icon-80.png */,
 				648720152331D42900F0F751 /* LaunchScreen.storyboard */,
 				648720182331D42900F0F751 /* Info.plist */,
 				648720192331D42900F0F751 /* main.m */,
@@ -144,6 +191,8 @@
 		AF35D025D92D88245FCF133A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				64BE6E14233B5B6E00E91C79 /* AVFoundation.framework */,
+				64BE6E12233B5B6800E91C79 /* UIKit.framework */,
 				E4A1903BD40629D9D3FED5AA /* libPods-THGetIDFATool.a */,
 			);
 			name = Frameworks;
@@ -207,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6416E5BF233B6599005D873A /* light_nav.png in Resources */,
 				648720172331D42900F0F751 /* LaunchScreen.storyboard in Resources */,
 				648757642332412000F0F751 /* setting-1.png in Resources */,
 				6487574C2332123C00F0F751 /* TableViewCell.xib in Resources */,
@@ -215,7 +265,9 @@
 				6487575923323F0900F0F751 /* ImageCollectionViewCell.xib in Resources */,
 				6487575F23323FB500F0F751 /* TitleCollectionViewCell.xib in Resources */,
 				648720122331D42800F0F751 /* Main.storyboard in Resources */,
-				64875769233257B300F0F751 /* Icon-80.png in Resources */,
+				6416E5C1233B65C3005D873A /* back_nav.png in Resources */,
+				64BE6E11233B564800E91C79 /* Icon-80.png in Resources */,
+				6416E5CB233B720C005D873A /* THSettingViewController.xib in Resources */,
 				648757652332412000F0F751 /* setting-2.png in Resources */,
 				648757632332412000F0F751 /* setting-3.png in Resources */,
 			);
@@ -253,15 +305,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BE6E18233B5C1D00E91C79 /* ScanResultViewController.m in Sources */,
 				648757502332190200F0F751 /* UIViewController+HUD.m in Sources */,
+				6416E5C5233B70B2005D873A /* THIDFAViewController.m in Sources */,
 				6487575E23323FB500F0F751 /* TitleCollectionViewCell.m in Sources */,
+				6416E5CA233B720C005D873A /* THSettingViewController.m in Sources */,
 				6487200F2331D42800F0F751 /* ViewController.m in Sources */,
 				6487201A2331D42900F0F751 /* main.m in Sources */,
 				6487200C2331D42800F0F751 /* AppDelegate.m in Sources */,
 				6487574D2332123C00F0F751 /* TableViewCell.m in Sources */,
 				6487575423322E2500F0F751 /* IDFASettingViewController.m in Sources */,
+				64BE6E0E233B544600E91C79 /* PDCameraScanViewController.m in Sources */,
+				64BE6E0F233B544600E91C79 /* PDCameraScanView.m in Sources */,
 				6487575A23323F0900F0F751 /* ImageCollectionViewCell.m in Sources */,
 				648720222331D48100F0F751 /* UIResponder+Router.m in Sources */,
+				64BE6E09233B513500E91C79 /* THCodeScanView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +465,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: honghua huang (QPS9U63PQP)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -428,6 +488,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
