@@ -33,7 +33,7 @@ AVCaptureMetadataOutputObjectsDelegate> //遵守AVCaptureMetadataOutputObjectsDe
     CGFloat kScreen_Width = [UIScreen mainScreen].bounds.size.width;
     
     //定位扫描框在屏幕正中央，并且宽高为200的正方形
-    self.scanView = [[UIView alloc]initWithFrame:CGRectMake((kScreen_Width-200)/2, (self.view.frame.size.height-200)/2, 200, 200)];
+    self.scanView = [[UIView alloc]initWithFrame:CGRectMake((kScreen_Width-240)/2, (self.view.frame.size.height-240)/2, 240, 240)];
     [self.view addSubview:self.scanView];
     
     //设置扫描界面（包括扫描界面之外的部分置灰，扫描边框等的设置）,后面设置
@@ -53,7 +53,7 @@ AVCaptureMetadataOutputObjectsDelegate> //遵守AVCaptureMetadataOutputObjectsDe
 - (void)setupNavigationItem{
     // 后退按钮
     UIButton * goBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [goBackButton setImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
+    [goBackButton setImage:[UIImage imageNamed:@"image_icon"] forState:UIControlStateNormal];
     [goBackButton addTarget:self action:@selector(goBackAction:) forControlEvents:UIControlEventTouchUpInside];
     goBackButton.frame = CGRectMake(0, 0, 35, 35);
     goBackButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
@@ -155,7 +155,11 @@ AVCaptureMetadataOutputObjectsDelegate> //遵守AVCaptureMetadataOutputObjectsDe
     
     ScanResultViewController *controller = [[ScanResultViewController alloc] init];
     controller.scanString = object.stringValue;
+    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:controller animated:YES];
+    
+    // 这样back回来的时候，tabBar会恢复正常显示
+    self.hidesBottomBarWhenPushed = NO;
 }
 
 /**
@@ -194,7 +198,11 @@ AVCaptureMetadataOutputObjectsDelegate> //遵守AVCaptureMetadataOutputObjectsDe
             if (content) {
                 ScanResultViewController *controller = [[ScanResultViewController alloc] init];
                 controller.scanString = content;
+                self.hidesBottomBarWhenPushed = YES;
                 [self.navigationController pushViewController:controller animated:YES];
+                
+                // 这样back回来的时候，tabBar会恢复正常显示
+                self.hidesBottomBarWhenPushed = NO;
             }
             else {
                 [self showHint:@"扫描失败"];

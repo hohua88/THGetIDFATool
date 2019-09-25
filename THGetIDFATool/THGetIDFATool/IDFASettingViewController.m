@@ -19,11 +19,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = @"IDFA设置";
+    [self setupNavigationItem];
     
     //注册cell
     [self.collectionView registerNib:[UINib nibWithNibName:[ImageCollectionViewCell cellIdentifier] bundle:nil] forCellWithReuseIdentifier:[ImageCollectionViewCell cellIdentifier]];
      [self.collectionView registerNib:[UINib nibWithNibName:[TitleCollectionViewCell cellIdentifier] bundle:nil] forCellWithReuseIdentifier:[TitleCollectionViewCell cellIdentifier]];
     // Do any additional setup after loading the view from its nib.
+}
+- (void)setupNavigationItem{
+    // 后退按钮
+    UIButton * goBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [goBackButton setImage:[UIImage imageNamed:@"back_nav"] forState:UIControlStateNormal];
+    [goBackButton addTarget:self action:@selector(goBackAction:) forControlEvents:UIControlEventTouchUpInside];
+    goBackButton.frame = CGRectMake(0, 0, 35, 35);
+    goBackButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    UIBarButtonItem * goBackButtonItem = [[UIBarButtonItem alloc] initWithCustomView:goBackButton];
+    self.navigationItem.leftBarButtonItems = @[goBackButtonItem];
+}
+- (void)goBackAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)backAction:(id)sender {

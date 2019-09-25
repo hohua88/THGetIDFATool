@@ -35,7 +35,7 @@
 - (void)setupNavigationItem{
     // 后退按钮
     UIButton * goBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [goBackButton setImage:[UIImage imageNamed:@"back_icon"] forState:UIControlStateNormal];
+    [goBackButton setImage:[UIImage imageNamed:@"back_nav"] forState:UIControlStateNormal];
     [goBackButton addTarget:self action:@selector(goBackAction:) forControlEvents:UIControlEventTouchUpInside];
     goBackButton.frame = CGRectMake(0, 0, 35, 35);
     goBackButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5);

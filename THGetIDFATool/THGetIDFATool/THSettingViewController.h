@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface THSettingViewController : UIViewController
 
+@property (nonatomic, weak) IBOutlet UITableView *tableview;
+
 @end
 
 NS_ASSUME_NONNULL_END

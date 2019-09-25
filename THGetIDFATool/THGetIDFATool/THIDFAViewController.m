@@ -11,7 +11,6 @@
 #import "TableViewCell.h"
 #import "UIResponder+Router.h"
 #import "UIViewController+HUD.h"
-#import "IDFASettingViewController.h"
 #import "PDCameraScanViewController.h"
 
 @interface THIDFAViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -92,20 +91,9 @@
         }
         else {
             NSLog(@"idfa is closed");
-            NSString *msg = @"IDFA未打开，是否设置";
-            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
-            
-            UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-                
-            }];
-            UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
-                
-                IDFASettingViewController *controller = [[IDFASettingViewController alloc] init];
-                [self presentViewController:controller animated:NO completion:nil];
-            }];
-            [alert addAction:cancelAction];
-            [alert addAction:okAction];
-            [self presentViewController:alert animated:YES completion:nil];
+            [self showHint:@"限制广告跟踪已打开"];
+            UIPasteboard *pasteBoard = [UIPasteboard generalPasteboard];
+            pasteBoard.string = [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
         }
     }
     else if([userInfo[@"value"] integerValue] == 1) {

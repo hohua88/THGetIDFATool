@@ -12,7 +12,6 @@
 		6416E5C1233B65C3005D873A /* back_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5C0233B65C2005D873A /* back_nav.png */; };
 		6416E5C5233B70B2005D873A /* THIDFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C3233B70B2005D873A /* THIDFAViewController.m */; };
 		6416E5CA233B720C005D873A /* THSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C8233B720C005D873A /* THSettingViewController.m */; };
-		6416E5CB233B720C005D873A /* THSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5C9233B720C005D873A /* THSettingViewController.xib */; };
 		6487200C2331D42800F0F751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200B2331D42800F0F751 /* AppDelegate.m */; };
 		6487200F2331D42800F0F751 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200E2331D42800F0F751 /* ViewController.m */; };
 		648720122331D42800F0F751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648720102331D42800F0F751 /* Main.storyboard */; };
@@ -49,7 +48,6 @@
 		6416E5C3233B70B2005D873A /* THIDFAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THIDFAViewController.m; sourceTree = "<group>"; };
 		6416E5C7233B720C005D873A /* THSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THSettingViewController.h; sourceTree = "<group>"; };
 		6416E5C8233B720C005D873A /* THSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THSettingViewController.m; sourceTree = "<group>"; };
-		6416E5C9233B720C005D873A /* THSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = THSettingViewController.xib; sourceTree = "<group>"; };
 		648720072331D42800F0F751 /* THGetIDFATool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THGetIDFATool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6487200A2331D42800F0F751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6487200B2331D42800F0F751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -156,7 +154,6 @@
 				6416E5C3233B70B2005D873A /* THIDFAViewController.m */,
 				6416E5C7233B720C005D873A /* THSettingViewController.h */,
 				6416E5C8233B720C005D873A /* THSettingViewController.m */,
-				6416E5C9233B720C005D873A /* THSettingViewController.xib */,
 				6487200A2331D42800F0F751 /* AppDelegate.h */,
 				6487200B2331D42800F0F751 /* AppDelegate.m */,
 				6487200D2331D42800F0F751 /* ViewController.h */,
@@ -267,7 +264,6 @@
 				648720122331D42800F0F751 /* Main.storyboard in Resources */,
 				6416E5C1233B65C3005D873A /* back_nav.png in Resources */,
 				64BE6E11233B564800E91C79 /* Icon-80.png in Resources */,
-				6416E5CB233B720C005D873A /* THSettingViewController.xib in Resources */,
 				648757652332412000F0F751 /* setting-2.png in Resources */,
 				648757632332412000F0F751 /* setting-3.png in Resources */,
 			);
@@ -466,7 +462,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/hd/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -489,7 +485,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/hd/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
