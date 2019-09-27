@@ -12,6 +12,7 @@
 		6416E5C1233B65C3005D873A /* back_nav.png in Resources */ = {isa = PBXBuildFile; fileRef = 6416E5C0233B65C2005D873A /* back_nav.png */; };
 		6416E5C5233B70B2005D873A /* THIDFAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C3233B70B2005D873A /* THIDFAViewController.m */; };
 		6416E5CA233B720C005D873A /* THSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6416E5C8233B720C005D873A /* THSettingViewController.m */; };
+		647FC165233DB50E00BFE486 /* THUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 647FC164233DB50E00BFE486 /* THUtils.m */; };
 		6487200C2331D42800F0F751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200B2331D42800F0F751 /* AppDelegate.m */; };
 		6487200F2331D42800F0F751 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6487200E2331D42800F0F751 /* ViewController.m */; };
 		648720122331D42800F0F751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648720102331D42800F0F751 /* Main.storyboard */; };
@@ -48,6 +49,8 @@
 		6416E5C3233B70B2005D873A /* THIDFAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THIDFAViewController.m; sourceTree = "<group>"; };
 		6416E5C7233B720C005D873A /* THSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THSettingViewController.h; sourceTree = "<group>"; };
 		6416E5C8233B720C005D873A /* THSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THSettingViewController.m; sourceTree = "<group>"; };
+		647FC163233DB50E00BFE486 /* THUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THUtils.h; sourceTree = "<group>"; };
+		647FC164233DB50E00BFE486 /* THUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THUtils.m; sourceTree = "<group>"; };
 		648720072331D42800F0F751 /* THGetIDFATool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THGetIDFATool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6487200A2331D42800F0F751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6487200B2331D42800F0F751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 				6487574E2332190200F0F751 /* UIViewController+HUD.h */,
 				6487574F2332190200F0F751 /* UIViewController+HUD.m */,
 				6416E5B9233B61F3005D873A /* PrefixHeader.pch */,
+				647FC163233DB50E00BFE486 /* THUtils.h */,
+				647FC164233DB50E00BFE486 /* THUtils.m */,
 				64BE6E07233B513500E91C79 /* THCodeScanView.h */,
 				64BE6E08233B513500E91C79 /* THCodeScanView.m */,
 				64BE6E0B233B544600E91C79 /* PDCameraScanView.h */,
@@ -302,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64BE6E18233B5C1D00E91C79 /* ScanResultViewController.m in Sources */,
+				647FC165233DB50E00BFE486 /* THUtils.m in Sources */,
 				648757502332190200F0F751 /* UIViewController+HUD.m in Sources */,
 				6416E5C5233B70B2005D873A /* THIDFAViewController.m in Sources */,
 				6487575E23323FB500F0F751 /* TitleCollectionViewCell.m in Sources */,
@@ -462,7 +468,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/hd/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,7 +491,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 96D5AN2D79;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/hd/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/eddy/THGetIDFATool/THGetIDFATool/THGetIDFATool/PrefixHeader.pch;
 				INFOPLIST_FILE = THGetIDFATool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEv-Ao-Nha">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEv-Ao-Nha">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,60 +13,63 @@
             <objects>
                 <viewController title="IDFA" id="PZf-mK-i9n" customClass="THIDFAViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iJ1-Dh-9jg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kz9-Jj-eag">
-                                <rect key="frame" x="191" y="598" width="32" height="32"/>
-                                <state key="normal" image="share_icon"/>
-                                <connections>
-                                    <action selector="shareButtonAction:" destination="PZf-mK-i9n" eventType="touchUpInside" id="FRw-8G-mbY"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9ty-Ie-3T3">
-                                <rect key="frame" x="0.0" y="348" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="133.5" width="375" height="400"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Z6f-um-lql"/>
+                                    <constraint firstAttribute="height" constant="400" id="Z6f-um-lql"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="dataSource" destination="PZf-mK-i9n" id="awF-mT-prS"/>
                                     <outlet property="delegate" destination="PZf-mK-i9n" id="uIN-PH-Ebu"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ann-MU-az7">
+                                <rect key="frame" x="318" y="553.5" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="44e-tV-ssS"/>
+                                    <constraint firstAttribute="width" constant="35" id="BIS-ob-Asn"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="question_icon"/>
+                                <connections>
+                                    <action selector="questionAction:" destination="PZf-mK-i9n" eventType="touchUpInside" id="G7f-EH-rUa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kz9-Jj-eag" firstAttribute="centerX" secondItem="iJ1-Dh-9jg" secondAttribute="centerX" id="431-z0-zTj"/>
+                            <constraint firstItem="Ann-MU-az7" firstAttribute="top" secondItem="9ty-Ie-3T3" secondAttribute="bottom" constant="20" id="2kO-ZI-p4i"/>
                             <constraint firstItem="9ty-Ie-3T3" firstAttribute="leading" secondItem="6QU-BM-OzR" secondAttribute="leading" id="F0v-f2-OXH"/>
                             <constraint firstItem="9ty-Ie-3T3" firstAttribute="centerX" secondItem="iJ1-Dh-9jg" secondAttribute="centerX" id="J8n-zq-q8m"/>
+                            <constraint firstItem="Ann-MU-az7" firstAttribute="trailingMargin" secondItem="6QU-BM-OzR" secondAttribute="trailing" constant="-30" id="T4v-y3-5eI"/>
                             <constraint firstItem="9ty-Ie-3T3" firstAttribute="centerY" secondItem="iJ1-Dh-9jg" secondAttribute="centerY" id="kto-z7-5xJ"/>
                             <constraint firstItem="6QU-BM-OzR" firstAttribute="trailing" secondItem="9ty-Ie-3T3" secondAttribute="trailing" id="noa-Y2-XZs"/>
-                            <constraint firstItem="kz9-Jj-eag" firstAttribute="top" secondItem="9ty-Ie-3T3" secondAttribute="bottom" constant="50" id="qbe-ji-xQ3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6QU-BM-OzR"/>
                     </view>
                     <navigationItem key="navigationItem" title="IDFA" id="hub-OE-5yM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="shareButton" destination="kz9-Jj-eag" id="kx1-9m-3Cp"/>
                         <outlet property="tableView" destination="9ty-Ie-3T3" id="Z0D-aZ-hx1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ej-uX-SPk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-91.304347826086968" y="22.767857142857142"/>
+            <point key="canvasLocation" x="-92" y="22.03898050974513"/>
         </scene>
         <!--设置-->
         <scene sceneID="idV-FR-TvZ">
             <objects>
                 <viewController title="设置" id="aG8-q0-UL4" customClass="THSettingViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfV-ee-atM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j4y-OA-HCc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <outlet property="dataSource" destination="aG8-q0-UL4" id="ePg-vO-l5t"/>
@@ -100,7 +101,7 @@
             <objects>
                 <viewController title="扫一扫" id="mBI-8I-z4B" customClass="PDCameraScanViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HaI-5t-zPV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="SQz-YA-egQ"/>
@@ -139,7 +140,7 @@
                     <tabBarItem key="tabBarItem" title="扫一扫" image="scan_icon" selectedImage="scan_icon" id="9Bm-kU-luO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gh8-Ph-Ggj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -158,7 +159,7 @@
                     <tabBarItem key="tabBarItem" title="设置" image="set_icon" selectedImage="set_icon" id="Q7f-OC-PnT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vZV-RI-ftN">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -177,7 +178,7 @@
                     <tabBarItem key="tabBarItem" title="IDFA" image="id_icon" selectedImage="id_icon" id="4aC-L8-ZM4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SLb-zI-wa0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -192,8 +193,8 @@
     </scenes>
     <resources>
         <image name="id_icon" width="24" height="24"/>
+        <image name="question_icon" width="32" height="32"/>
         <image name="scan_icon" width="24" height="24"/>
         <image name="set_icon" width="24" height="24"/>
-        <image name="share_icon" width="32" height="32"/>
     </resources>
 </document>

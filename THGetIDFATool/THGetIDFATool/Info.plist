@@ -23,9 +23,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>请求访问相机权限</string>
+	<string> 请点击“好”以允许访问。
+
+  若不允许, 你将无法使用扫一扫等功能。</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>请求访问相册权限</string>
+	<string> 请点击“好”以允许访问。
+
+  若不允许, 你将无法使用扫一扫等功能。</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
