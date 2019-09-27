@@ -472,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eddy.idfaTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = idfa_dev_0917;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -495,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.eddy.idfaTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = idea_dis_0916;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
