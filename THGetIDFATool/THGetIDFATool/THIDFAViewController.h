@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface THIDFAViewController : UIViewController
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
-@property (nonatomic, weak) IBOutlet UIButton *shareButton;
 @end
 
 NS_ASSUME_NONNULL_END
